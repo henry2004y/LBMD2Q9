@@ -11,7 +11,7 @@ The benchmark is chosen to be the drag coefficient obtained from flow over a cyl
 
 ## Performance
 
-I found that in many places vectorization for the innermost loop actually degraded the performance! This is new JIT era.
+I found that in many places vectorization for the innermost loop actually degraded the performance! This is the new JIT era.
 It is possible, but maybe not worth it, to avoid if statements inside nested loops by using logical indexes. It is relatively easy to implement in Julia.
 
 If the vectorized version is not along the continuous dimension, it makes
